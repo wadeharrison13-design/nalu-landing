@@ -52,13 +52,14 @@ header{
   backdrop-filter:saturate(140%) blur(10px);
   background:rgba(251,247,242,.9);
   border-bottom:1px solid rgba(31,42,36,.08);
+  padding:0;
 }
 
 .nav{
   display:flex;
   align-items:center;
   justify-content:flex-start;
-  padding:18px 0 14px;
+  padding:6px 0;
 }
 
 .brand{
@@ -75,7 +76,7 @@ header{
 }
 
 .hero{
-  padding:28px 0 20px;
+  padding:16px 0 20px;
 }
 
 .heroTextWrap{
