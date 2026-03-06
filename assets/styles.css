@@ -75,6 +75,10 @@ header{
   }
 }
 
+header{
+  padding-bottom:10px;
+}
+
 .heroGrid{
   display:grid;
   grid-template-columns: 1.02fr .98fr;
