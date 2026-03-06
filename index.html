@@ -14,7 +14,6 @@
   <link rel="icon" type="image/png" href="assets/Favicon.png" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
-
 <body>
   <header>
     <div class="container">
@@ -28,30 +27,31 @@
 
   <main>
     <section class="hero">
+      <div class="container heroTextWrap">
+        <h1>Find the Practitioner That Fits</h1>
+
+        <p class="lede">
+          Finding the right practitioner shouldn’t feel so difficult.
+        </p>
+
+        <p class="lede">
+          Nalu Support helps connect individuals with practitioners whose work may align with their needs.
+          Instead of searching through endless directories, share a little about what you're looking for and
+          we’ll help identify practitioners who may be a good fit.
+        </p>
+
+        <div class="trustRow">
+          <span class="pill">Private</span>
+          <span class="pill">No public posting</span>
+          <span class="pill">Thoughtful introductions</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="formSection">
       <div class="container">
-        <div class="heroGrid">
-
-          <div class="heroCopy">
-            <h1>Find the Practitioner That Fits</h1>
-
-            <p class="lede">
-              Finding the right practitioner shouldn’t feel so difficult.
-            </p>
-
-            <p class="lede">
-              Nalu Support helps connect individuals with practitioners whose work may align with their needs.
-              Instead of searching through endless directories, share a little about what you're looking for
-              and we’ll help identify practitioners who may be a good fit.
-            </p>
-
-            <div class="trustRow">
-              <span class="pill">Private</span>
-              <span class="pill">No public posting</span>
-              <span class="pill">Thoughtful introductions</span>
-            </div>
-          </div>
-
-          <div class="card formCard">
+        <div id="client-form" class="formContainer">
+          <div class="card formCard formCard--client">
             <div class="formHeader">
               <div class="formTitle">Start the intake form</div>
               <div class="formMeta">Takes about 2 minutes.</div>
@@ -63,8 +63,13 @@
 
             <div class="embedWrap">
               <iframe
-                src="https://tally.so/embed/xXpJo5?alignLeft=1&hideTitle=1&dynamicHeight=1&formEventsForwarding=1"
+                data-tally-src="https://tally.so/embed/xXpJo5?alignLeft=1&hideTitle=1&dynamicHeight=1&formEventsForwarding=1"
                 loading="lazy"
+                width="100%"
+                height="980"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
                 title="Nalu Support — Client Intake Form">
               </iframe>
             </div>
@@ -85,7 +90,7 @@
           <li>Spending hours researching practitioners with little clarity</li>
           <li>Uncertainty about whether a practitioner truly understands their situation</li>
         </ul>
-        <p class="muted" style="margin-top:12px;">
+        <p class="muted sectionTextEnd">
           When you're already looking for support, the process can feel overwhelming.
         </p>
       </div>
@@ -94,14 +99,14 @@
     <section class="section">
       <div class="container narrow">
         <h2 class="sectionTitle">A more thoughtful way to find support</h2>
+        <p class="muted">Nalu Support takes a different approach.</p>
         <p class="muted">
-          Nalu Support takes a different approach.
+          Rather than acting as a directory, Nalu focuses on <strong>thoughtful introductions</strong>
+          between individuals seeking support and practitioners whose work may align with their needs.
         </p>
         <p class="muted">
-          Rather than acting as a directory, Nalu focuses on <strong>thoughtful introductions</strong> between individuals seeking support and practitioners whose work may align with their needs.
-        </p>
-        <p class="muted">
-          By understanding what you’re looking for, we can help identify practitioners who may be well suited to support you. Our aim is to make the process <strong>simpler, more private, and more intentional.</strong>
+          By understanding what you’re looking for, we can help identify practitioners who may be well suited
+          to support you. Our aim is to make the process <strong>simpler, more private, and more intentional.</strong>
         </p>
       </div>
     </section>
@@ -139,15 +144,15 @@
         <h2 class="sectionTitle">Types of practitioners in the network may include</h2>
         <div class="grid3">
           <div class="box">
-            <h3>Somatic & trauma-informed</h3>
+            <h3>Somatic &amp; trauma-informed</h3>
             <p>Trauma-informed bodywork, Somatic therapy, Internal Family Systems (IFS)</p>
           </div>
           <div class="box">
-            <h3>Therapy & counselling</h3>
+            <h3>Therapy &amp; counselling</h3>
             <p>Counselling / psychotherapy, Relationship therapy, Sex therapy, Transpersonal psychology</p>
           </div>
           <div class="box">
-            <h3>Holistic & integrative</h3>
+            <h3>Holistic &amp; integrative</h3>
             <p>Naturopathy / holistic health coaching, Breathwork, Energy healing, Life coaching, Doula support, Mediumship / psychic work</p>
           </div>
         </div>
@@ -158,16 +163,17 @@
       <div class="container">
         <div class="card cta">
           <div>
-            <h2 class="sectionTitle" style="margin:0 0 8px;">Session investment</h2>
-            <p class="muted" style="margin:0;">
+            <h2 class="sectionTitle ctaTitle">Session investment</h2>
+            <p class="muted ctaText">
               Most practitioners in the Nalu network charge between <strong>$150–250 per session</strong>.
-              During the intake process we ask whether you are comfortable investing within this range. This helps ensure that when introductions are made, both individuals and practitioners are aligned.
+              During the intake process we ask whether you are comfortable investing within this range. This helps
+              ensure that when introductions are made, both individuals and practitioners are aligned.
             </p>
           </div>
 
           <div class="ctaRight">
             <div class="ctaNote">Ready to begin?</div>
-            <a class="ctaButton" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">Complete the intake form</a>
+            <a class="ctaButton" href="#client-form">Complete the intake form</a>
             <div class="ctaSmall">Takes about 2 minutes.</div>
           </div>
         </div>
@@ -179,12 +185,13 @@
         <div class="footerGrid">
           <div>
             <img class="footerMark" src="assets/logo-mark.png" alt="Nalu Support mark" />
-            <p class="muted" style="margin:10px 0 0;">
-              Nalu Support introduces individuals to independent practitioners.
-              Nalu Support does not provide medical advice, diagnosis, or treatment.
-              Always consult a qualified healthcare professional regarding medical or mental health concerns.
+            <p class="muted footerText">
+              Nalu Support introduces individuals to independent practitioners. Nalu Support does not provide
+              medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional regarding
+              medical or mental health concerns.
             </p>
           </div>
+
           <div class="footerMeta">
             <small>© <span id="year"></span> Nalu Support · nalusupport.com</small>
           </div>
@@ -195,6 +202,30 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+    var d = document,
+        w = "https://tally.so/widgets/embed.js",
+        v = function() {
+          if (typeof Tally !== "undefined") {
+            Tally.loadEmbeds();
+          } else {
+            d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e) {
+              e.src = e.dataset.tallySrc;
+            });
+          }
+        };
+
+    if (typeof Tally !== "undefined") {
+      v();
+    } else if (d.querySelector('script[src="' + w + '"]') == null) {
+      var s = d.createElement("script");
+      s.src = w;
+      s.onload = v;
+      s.onerror = v;
+      d.body.appendChild(s);
+    }
   </script>
 </body>
 </html>
