@@ -52,14 +52,16 @@ header{
   backdrop-filter:saturate(140%) blur(10px);
   background:rgba(251,247,242,.9);
   border-bottom:1px solid rgba(31,42,36,.08);
-  padding:0;
+  height:96px;
+  display:flex;
+  align-items:center;
 }
 
 .nav{
   display:flex;
   align-items:center;
   justify-content:flex-start;
-  padding:6px 0;
+  padding:0px 0;
 }
 
 .brand{
@@ -70,7 +72,7 @@ header{
 }
 
 .brand img{
-  height:180px;
+  height:300px;
   width:auto;
   display:block;
 }
